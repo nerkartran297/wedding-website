@@ -7,6 +7,9 @@ async function galleryLoad() {
 
         portfolio.innerHTML = ``;
 
+        const ytb = document.querySelector(".ytbvid");
+        ytb.src = res.HomeVideo;
+
         res.Gallery.forEach(gallery => {
             const galleryContainer = document.createElement('div');
             galleryContainer.className = 'item-portfolio item-portfolio-v2 item-4cols wedding';
@@ -43,3 +46,4 @@ async function galleryLoad() {
 }
 
 galleryLoad();
+
