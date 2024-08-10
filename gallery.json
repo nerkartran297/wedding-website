@@ -153,53 +153,5 @@
             "name": "Tom & Alice",
             "type": "Wedding"
         }
-    ],
-    "WelcomeGate": [
-        {
-            "image": "",
-            "price": 500000
-        }
-    ],
-    "WelcomeBoard": [
-        {
-            "image": "",
-            "price": 500000
-        }
-    ],
-    "TableDecor": [
-        {
-            "image": "",
-            "price": 500000
-        }
-    ],
-    "Bar": [
-        {
-            "image": "",
-            "price": 500000
-        }
-    ],
-    "DJConsole": [
-        {
-            "image": "",
-            "price": 500000
-        }
-    ],
-    "Chair": [
-        {
-            "image": "",
-            "price": 500000
-        }
-    ],
-    "HospitalityDesk": [
-        {
-            "image": "",
-            "price": 500000
-        }
-    ],
-    "Chandeliers": [
-        {
-            "image": "",
-            "price": 500000
-        }
     ]
 }
