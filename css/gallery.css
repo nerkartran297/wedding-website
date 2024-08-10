@@ -10,18 +10,6 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 1124px) {
-    .customGallery {
-        display: none;
-    }
-}
-
-@media (min-width: 1124px) {
-    .maingal {
-        display: none;
-    }
-}
-
 .gallery1 {
     max-width: 16%;
     min-width: 16%;
@@ -98,10 +86,17 @@
 .item-portfolio {
     aspect-ratio: 1 / 1;
     overflow: hidden;
+
 }
 
 .item-portfolio img {
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
     object-fit: cover;
     aspect-ratio: 1 / 1;
     overflow: hidden;
+}
+
+.port-meta-nav {
+    margin-top: 50px;
 }
