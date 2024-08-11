@@ -27,20 +27,22 @@ async function languageChange() {
     if (lang === 0) lang = 1;
     else lang = 0;
 
-    At.textContent = res.Title.AboutUs[lang];
-    Wt.textContent = res.Title.WeddingPlanning[lang];
-    Et.textContent = res.Title.Event[lang];
-    Tt.textContent = res.Title.Tour[lang];
-    Mt.textContent = res.Title.Mice[lang];
+    if (At) {
+        At.textContent = res.Title.AboutUs[lang];
+        Wt.textContent = res.Title.WeddingPlanning[lang];
+        Et.textContent = res.Title.Event[lang];
+        Tt.textContent = res.Title.Tour[lang];
+        Mt.textContent = res.Title.Mice[lang];
 
-    Ac.innerHTML = res.Content.AboutUs[lang];
-    Wc.innerHTML = res.Content.WeddingPlanning[lang];
-    Ec.innerHTML = res.Content.Event[lang];
-    Tc.innerHTML = res.Content.Tour[lang];
-    Mc.innerHTML = res.Content.Mice[lang];
+        Ac.innerHTML = res.Content.AboutUs[lang];
+        Wc.innerHTML = res.Content.WeddingPlanning[lang];
+        Ec.innerHTML = res.Content.Event[lang];
+        Tc.innerHTML = res.Content.Tour[lang];
+        Mc.innerHTML = res.Content.Mice[lang];
 
-    document.querySelector('.guitn').value = res.Title.SendMessage[lang];
-    ds.textContent = res.Content.Destination[lang];
+        document.querySelector('.guitn').value = res.Title.SendMessage[lang];
+        ds.textContent = res.Content.Destination[lang];
+    }
 
     document.querySelector('.nA').textContent = res.Navbar.AboutUs[lang];
     document.querySelector('.nH').textContent = res.Navbar.Home[lang];

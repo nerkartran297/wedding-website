@@ -6459,4 +6459,8 @@ body {
 	display: none;
 }
 
+.rentItem {
+	min-height: 400px !important;
+}
+
 /* DESTINATION */

@@ -25,11 +25,11 @@ async function galleryLoad() {
                         width="750"
                         height="750"
                     />
-                    <a href="album_1.html"> </a>
+                    <a href="album_${gallery.id}.html"> </a>
                 </div>
                 <div class="item-text-holder-v2">
                     <h2 class="item-title display-6">
-                        <a href="album_1.html">${gallery.name}</a>
+                        <a href="album_${gallery.id}.html">${gallery.name}</a>
                     </h2>
                     <ul class="portfolio-categ portfolio-categ-v2">
                         <li><a href="#">${gallery.type}</a></li>

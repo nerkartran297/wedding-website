@@ -1,50 +1,58 @@
 {
     "WelcomeGate": [
         {
-            "image": "",
-            "price": 500000
+            "image": "images/album1/1.jpg",
+            "price": "500000",
+            "name": "Cổng chào loại 1"
         }
     ],
     "WelcomeBoard": [
         {
-            "image": "",
-            "price": 500000
+            "image": "images/album1/1.jpg",
+            "price": "500000",
+            "name": "Bảng chào loại 1"
         }
     ],
     "TableDecor": [
         {
-            "image": "",
-            "price": 500000
+            "image": "images/album1/1.jpg",
+            "price": "500000",
+            "name": "Bàn loại 1"
         }
     ],
     "Bar": [
         {
-            "image": "",
-            "price": 500000
+            "image": "images/album1/1.jpg",
+            "price": "500000",
+            "name": "Quầy bar loại 1"
         }
     ],
     "DJConsole": [
         {
-            "image": "",
-            "price": 500000
+            "image": "images/album1/1.jpg",
+            "price": "500000",
+            "name": "DJ loại 1"
         }
     ],
     "Chair": [
         {
-            "image": "",
-            "price": 500000
+            "image": "images/album1/1.jpg",
+            "price": "500000",
+            "name": "Ghế loại 1"
         }
     ],
     "HospitalityDesk": [
         {
-            "image": "",
-            "price": 500000
+            "image": "images/album1/1.jpg",
+            "price": "500000",
+            "name": "Bàn tiếp tân loại 1"
         }
     ],
     "Chandeliers": [
         {
-            "image": "",
-            "price": 500000
+            "image": "images/album1/1.jpg",
+            "price": "500000",
+            "name": "Đèn chùm loại 1"
         }
     ]
 }
