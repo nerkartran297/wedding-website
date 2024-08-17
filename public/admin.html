@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOVELAND Admin</title>
+        <link
+            rel="stylesheet"
+            href="../css/admin.css
+        "
+        />
+    </head>
+    <body>
+        <div class="functionDiv">
+            <p>Confirm Password</p>
+            <input
+                type="text"
+                placeholder="Enter your password here"
+                class="password"
+            />
+            <input
+                type="text"
+                placeholder="Enter your secret key here"
+                class="secretKey"
+            />
+            <input
+                type="text"
+                placeholder="Enter your second key here"
+                class="lovelandKey"
+            />
+        </div>
+
+        <div class="container">
+            <div class="functionDiv">
+                <p>Add album</p>
+                <input
+                    type="text"
+                    placeholder="Album cover"
+                    class="albumCover"
+                />
+                <input
+                    type="text"
+                    placeholder="Paste images list ',' "
+                    class="imageList"
+                />
+                <input type="text" placeholder="Album name" class="albumName" />
+                <input
+                    type="text"
+                    placeholder="Album types"
+                    class="albumType"
+                />
+                <button class="addAlbum">Add Album</button>
+            </div>
+            <div class="functionDiv">
+                <p>Add image to album</p>
+                <input
+                    type="text"
+                    placeholder="Album number"
+                    class="albumNumberToAdd"
+                />
+                <input
+                    type="text"
+                    placeholder="Paste image link"
+                    class="imageLinkToAdd"
+                />
+                <button class="addImageToAlbum">Add image to album</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="functionDiv">
+                <p>Delete a image</p>
+                <input
+                    type="text"
+                    placeholder="Enter the image number"
+                    class="imageNumberToDelete"
+                />
+                <input
+                    type="text"
+                    placeholder="Enter the album number"
+                    class="albumNumberToDelete"
+                />
+                <button class="imageDelete">Delete Album</button>
+            </div>
+            <div class="functionDiv">
+                <p>Delete album</p>
+                <input
+                    type="text"
+                    placeholder="Enter the album number"
+                    class="albumNumberToDeleteFull"
+                />
+                <button class="albumDelete">Delete Album</button>
+            </div>
+        </div>
+
+        <div class="functionDiv">
+            <p>Edit content</p>
+            <input
+                type="text"
+                placeholder="Về chúng tôi (EN)"
+                class="aboutUsEn"
+            />
+            <input
+                type="text"
+                placeholder="Về chúng tôi (VI)"
+                class="aboutUsVi"
+            />
+            <input
+                type="text"
+                placeholder="Wedding Planning (EN)"
+                class="weddingPlanningEn"
+            />
+            <input
+                type="text"
+                placeholder="Wedding Planning (VI)"
+                class="weddingPlanningVi"
+            />
+            <input type="text" placeholder="Events (EN)" class="eventEn" />
+            <input type="text" placeholder="Events (VI)" class="eventVi" />
+            <input type="text" placeholder="Mice (EN)" class="miceEn" />
+            <input type="text" placeholder="Mice (VI)" class="miceVi" />
+            <input type="text" placeholder="Tour (EN)" class="tourEn" />
+            <input type="text" placeholder="Tour (VI)" class="tourVi" />
+            <input
+                type="text"
+                placeholder="Destination (EN)"
+                class="destinationEn"
+            />
+            <input
+                type="text"
+                placeholder="Destination (VI)"
+                class="destinationVi"
+            />
+            <button class="saveChange">Save changes</button>
+        </div>
+        <div class="container">
+            <div class="functionDiv">
+                <p>Add Rental Item</p>
+                <input
+                    type="text"
+                    placeholder="Enter rental name here"
+                    class="rentalAdd"
+                />
+                <input
+                    type="text"
+                    placeholder="Enter item image link here"
+                    class="itemImage"
+                />
+                <input
+                    type="text"
+                    placeholder="Enter item price here (VD: 500000)"
+                    class="itemPrice"
+                />
+                <input
+                    type="text"
+                    placeholder="Enter item name here"
+                    class="itemName"
+                />
+                <button class="addRental">Add item</button>
+            </div>
+            <div class="functionDiv">
+                <p>Remove Rental Item</p>
+                <input
+                    type="text"
+                    placeholder="Enter rental name here"
+                    class="rentalRemove"
+                />
+                <input
+                    type="text"
+                    placeholder="Enter item id here"
+                    class="itemRemove"
+                />
+                <button class="removeRental">Remove item</button>
+            </div>
+        </div>
+
+        <script src="../js/admin.js"></script>
+    </body>
+</html>

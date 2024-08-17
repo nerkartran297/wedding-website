@@ -4,7 +4,6 @@
     af = aboutUs footer
 */
 
-
 const At = document.querySelector('.aboutusTitle');
 const Ac = document.querySelector('.aboutusContent');
 const Wt = document.querySelector('.weddingTitle');
@@ -21,42 +20,8 @@ const langBTN = document.querySelector('.langua');
 let lang = 0; // true = Vietnamese / false = English
 
 async function languageChange() {
-    const response = await fetch("content.json");
+    const response = await fetch("../content.json");
     const res = await response.json();
-
-    const CTRES = await fetch("/api/contents");
-    const CT = await CTRES.json();
-
-    console.log(CT);
-
-    const Content = {
-        AboutUs: [
-            CT[0].AboutUsEn,
-            CT[0].AboutUsVi,
-        ],
-        WeddingPlanning: [
-            CT[0].WeddingPlanningEn,
-            CT[0].WeddingPlanningVi,
-        ],
-        Event: [
-            CT[0].EventEn,
-            CT[0].EventVi,
-        ],
-        Mice: [
-            CT[0].MiceEn,
-            CT[0].MiceVi
-        ],
-        Tour: [
-            CT[0].TourEn,
-            CT[0].TourVi
-        ],
-        Destination: [
-            CT[0].DestinationEn,
-            CT[0].DestinationVi
-        ]
-    };
-
-    console.log(Content);
 
     if (lang === 0) lang = 1;
     else lang = 0;
@@ -68,14 +33,14 @@ async function languageChange() {
         Tt.textContent = res.Title.Tour[lang];
         Mt.textContent = res.Title.Mice[lang];
 
-        Ac.innerHTML = Content.AboutUs[lang];
-        Wc.innerHTML = Content.WeddingPlanning[lang];
-        Ec.innerHTML = Content.Event[lang];
-        Tc.innerHTML = Content.Tour[lang];
-        Mc.innerHTML = Content.Mice[lang];
-        ds.textContent = Content.Destination[lang];
+        Ac.innerHTML = res.Content.AboutUs[lang];
+        Wc.innerHTML = res.Content.WeddingPlanning[lang];
+        Ec.innerHTML = res.Content.Event[lang];
+        Tc.innerHTML = res.Content.Tour[lang];
+        Mc.innerHTML = res.Content.Mice[lang];
 
         document.querySelector('.guitn').value = res.Title.SendMessage[lang];
+        ds.textContent = res.Content.Destination[lang];
     }
 
     document.querySelector('.nA').textContent = res.Navbar.AboutUs[lang];
