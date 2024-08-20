@@ -18,7 +18,7 @@ async function imgLoad() {
 
             imgContainer.innerHTML = `
                 <a
-                    href="/${image}"
+                    href="${(image[0] === "h") ? image : ("/" + image)}"
                     class="lightbox"
                     title=""
                     target="_blank"

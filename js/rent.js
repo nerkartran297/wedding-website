@@ -27,7 +27,7 @@ async function imgLoad() {
 
             imgContainer.innerHTML = `
                             <a
-                                href="#"
+                                href="/#contact"
                                 class="lightbox"
                                 title=""
                             >

@@ -16,4 +16,9 @@ submitBtn.addEventListener('click', (event) => {
     urlObject.searchParams.set("note", "Website");
 
     fetch(urlObject.toString());
+
+    // submitBtn.textContent = "Thank you for reaching us!";
+    // setTimeout(() => {
+    //     submitBtn.textContent = "Liên hệ";
+    // }, 500);
 });
