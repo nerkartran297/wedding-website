@@ -27,8 +27,6 @@ async function languageChange() {
     const CTRES = await fetch("/api/contents");
     const CT = await CTRES.json();
 
-    console.log(CT);
-
     const Content = {
         AboutUs: [
             CT[0].AboutUsEn,
@@ -55,8 +53,6 @@ async function languageChange() {
             CT[0].DestinationVi
         ]
     };
-
-    console.log(Content);
 
     if (lang === 0) lang = 1;
     else lang = 0;

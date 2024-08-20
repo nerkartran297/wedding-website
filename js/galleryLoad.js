@@ -55,12 +55,25 @@ async function sectionImage() {
         const response = await fetch("/api/section");
         let res = await response.json();
 
-        WPIMG.src = res.wpimg;
-        MIMG.src = res.mimg;
-        EIMG.src = res.eimg;
+        WPIMG.src = res[0].wpimg;
+        MIMG.src = res[0].mimg;
+        EIMG.src = res[0].eimg;
 
-        document.querySelector(".ytbvid").src = res.homevid;
+        document.querySelector(".ytbvid").src = res[0].homevid;
+
+        const home = document.querySelector(".homeSlider");
+        home.innerHTML = ``;
+
+        res[0].images.forEach(image => {
+            const imgContainer = document.createElement("div");
+            imgContainer.className = "swiper-slide slider-img";
+            imgContainer.style.cssText = `background-image: url('${image}')`;
+
+            home.appendChild(imgContainer);
+        });
     } catch (error) {
         console.log(`Error while getting sectionImage, ${error}`);
     }
 }
+
+sectionImage();

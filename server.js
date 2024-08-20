@@ -79,7 +79,8 @@ const sectionImage = new mongoose.Schema({
     wpimg: { type: String, required: true },
     eimg: { type: String, required: true },
     mimg: { type: String, required: true },
-    homevid: { type: String, require: true }
+    homevid: { type: String, require: true },
+    images: { type: [String], required: true }
 });
 
 const contentSchema = new mongoose.Schema({
