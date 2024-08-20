@@ -6464,3 +6464,19 @@ body {
 }
 
 /* DESTINATION */
+
+.notif {
+	padding: 30px;
+	font-size: 1.1rem;
+	border-radius: 40px;
+	background-color: rgb(100, 206, 111);
+	color: white;
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 200;
+	align-items: center;
+	justify-content: center;
+}

@@ -92,6 +92,8 @@ async function languageChange() {
     document.querySelector('.afcontent').textContent = res.Content.AboutUsFooter[lang];
     document.querySelector('.cf').textContent = res.Title.Contact[lang];
 
+    document.querySelector(".notif").textContent = (lang === 0) ? "We will contact you soon" : "Chúng tôi sẽ sớm liên hệ bạn";
+
     if (lang) {
         document.querySelector('.langbtn').style.backgroundColor = 'rgb(55, 130, 251)';
         document.querySelector('.langbtn').style.color = 'white';
@@ -122,6 +124,3 @@ if (sections)
             }
         });
     });
-
-
-

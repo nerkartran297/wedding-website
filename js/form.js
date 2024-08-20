@@ -17,8 +17,8 @@ submitBtn.addEventListener('click', (event) => {
 
     fetch(urlObject.toString());
 
-    // submitBtn.textContent = "Thank you for reaching us!";
-    // setTimeout(() => {
-    //     submitBtn.textContent = "Liên hệ";
-    // }, 500);
+    document.querySelector(".notif").style.display = "flex";
+    setTimeout(() => {
+        document.querySelector(".notif").style.display = "none";
+    }, 500);
 });
