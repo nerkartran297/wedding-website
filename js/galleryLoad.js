@@ -18,7 +18,7 @@ async function galleryLoad() {
                 <div class="post-image item-grid-image-v2">
                     <img
                         loading="lazy"
-                        src="../${gallery.cover}"
+                        src="${(gallery.cover[0] === "h") ? gallery.cover : ("../" + gallery.cover)}"
                         class="img-grid-v2"
                         alt="picture"
                         width="750"
