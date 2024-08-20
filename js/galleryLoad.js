@@ -45,3 +45,22 @@ async function galleryLoad() {
 }
 
 galleryLoad();
+
+const WPIMG = document.querySelector(".WPIMG");
+const EIMG = document.querySelector(".EIMG");
+const MIMG = document.querySelector(".MIMG");
+
+async function sectionImage() {
+    try {
+        const response = await fetch("/api/section");
+        let res = await response.json();
+
+        WPIMG.src = res.wpimg;
+        MIMG.src = res.mimg;
+        EIMG.src = res.eimg;
+
+        document.querySelector(".ytbvid").src = res.homevid;
+    } catch (error) {
+        console.log(`Error while getting sectionImage, ${error}`);
+    }
+}

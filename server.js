@@ -75,6 +75,13 @@ const accountSchema = new mongoose.Schema({
     loveland: { type: String, required: true }
 });
 
+const sectionImage = new mongoose.Schema({
+    wpimg: { type: String, required: true },
+    eimg: { type: String, required: true },
+    mimg: { type: String, required: true },
+    homevid: { type: String, require: true }
+});
+
 const contentSchema = new mongoose.Schema({
     AboutUsEn: { type: String, required: true },
     AboutUsVi: { type: String, required: true },
@@ -90,6 +97,7 @@ const contentSchema = new mongoose.Schema({
     DestinationVi: { type: String, required: true }
 });
 
+const SectionImage = mongoose.model('SectionImage', sectionImage);
 const Account = mongoose.model('Account', accountSchema);
 const Gallery = mongoose.model('Gallery', gallerySchema);
 const Rent = mongoose.model('Rent', rentSchema);
@@ -184,6 +192,16 @@ app.get("/api/contents", async (req, res) => {
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: "Lỗi khi lấy content" });
+    }
+});
+//Lấy img
+app.get("/api/section", async (req, res) => {
+    try {
+        const response = await SectionImage.find();
+        res.json(response);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: "Lỗi khi lấy sectionImage" });
     }
 });
 //Lấy list album
@@ -360,4 +378,6 @@ app.delete('/api/galleries/deleteImage', async (req, res) => {
         res.status(500).json({ error: 'Lỗi máy chủ' });
     }
 });
+
+
 
